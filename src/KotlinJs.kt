@@ -1,17 +1,14 @@
 import kotlin.browser.*
-import org.w3c.dom.*
-import kotlin.dom.appendText
-
 
 fun main(args: Array<String>) {
 
-    val button = document.getElementById("mybutton") as HTMLButtonElement
+    val button = document.getElementById("submit")
 
-    button.addEventListener("click", {
-        document.title = "button was clicked"
+    button?.addEventListener("click", {
+        window.alert("Um alert, eita!!!")
     })
 }
 
 fun valuate() {
-    window.alert("dasdasd")
+
 }
